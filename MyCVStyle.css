@@ -126,9 +126,11 @@ footer {
 }
 
 .dropdown {
-  position: absolute;
+  
+  position: fixed;
   top: 20px;
   right: 20px;
+  z-index: 1000; /* make sure dropdown stays above  */
 }
 
 .dropdown-toggle {
@@ -143,15 +145,16 @@ footer {
 
 .dropdown-menu {
   display: none;
-  position: absolute;
-  right: 0;
-  top: 40px;
+  position: fixed;   /* change absolute to fixed */
+  right: 20px;       /* same as .dropdown right */
+  top: 60px;         /* fixed offset from top of viewport */
   background-color: var(--header-bg);
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  z-index: 999;
+  z-index: 1001;     
 }
+
 
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -222,5 +225,22 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+#backToTop {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #360062;
 }
 
