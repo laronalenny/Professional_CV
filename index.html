@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenny Mosupye | Virtual CV</title>
+  <link rel="stylesheet" href="MyCVStyle.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4b0082;
+      color: white;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #4b0082;
+      color: white;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown-toggle {
+      background-color: #4b0082;
+      color: white;
+      font-size: 24px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background-color: #4b0082;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .toggle-button {
+      width: 100%;
+      text-align: left;
+      padding: 8px 12px;
+      background-color: #4b0082;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .toggle-button:hover {
+      background-color: #360062;
+    }
+
+    .profile-photo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    @media screen and (max-width: 600px) {
+      .profile-photo {
+        width: 100px;
+        height: auto;
+        top: 15px;
+        left: 15px;
+        max-width: 100%;
+        border-width: 1.5px;
+      }
+
+      .dropdown {
+        top: 15px;
+        right: 15px;
+      }
+
+      .dropdown-toggle {
+        font-size: 20px;
+        padding: 4px 10px;
+      }
+
+      .dropdown-menu .toggle-button {
+        font-size: 0.95rem;
+        padding: 6px 10px;
+      }
+
+      header {
+        padding: 25px 15px;
+      }
+
+      header h1 {
+        font-size: 1.9rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="profile.jpg" alt="Profile Photo" class="profile-photo" />
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">☰</button>
+      <div class="dropdown-menu">
+        <button class="toggle-button" onclick="toggleDarkMode()">
+          <span id="darkModeIcon">🌓</span> Dark Mode
+        </button>
+      </div>
+    </div>
+
+    <h1><span style="font-size: 80px;">Lenny Mosupye</span></h1>
+    <nav>
+      <a href="https://www.linkedin.com/in/lenny-mosupye-b49801330/?trk=opento_sprofile_topcard" target="_blank">LinkedIn</a>
+      <a href="https://github.com/dashboard" target="_blank">GitHub</a>
+      <a href="mailto:LaronaMosupye@gmail.com">Email</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a disciplined and driven individual with a proven track record of academic excellence, leadership, and community involvement. From earning merit awards and excelling in athletics to leading the IT Student Society at NWU and winning a silver medal in the Computer Olympiad, I thrive in diverse environments. My commitment to personal growth and adaptability fuels my passion for solving complex problems and making a positive impact in both my field and community.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>Problem Solving</li>
+      <li>Adaptability</li>
+      <li>Technical Proficiency</li>
+      <li>Data Analysis (Excel)</li>
+      <li>Database Management (SQL, MySQL)</li>
+      <li>Programming Languages: Python, C#, SQL</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Meridian Rustenburg</strong> - High School (Graduated: 2020)</p>
+    <ul>
+      <li>Most Disciplined and Hardworking Student (Gr10 - Gr12)</li>
+      <li>Best consistent performer in Computer Applications and Technology</li>
+    </ul>
+    <p><strong>University of Cape Town (UCT)</strong> - IT Management Short Course (2021)</p>
+    <p><strong>North-West University (NWU)</strong> - BSc Information Technology (Expected 2026)</p>
+  </section>
+
+  <section id="awards">
+    <h2>Awards & Achievements</h2>
+    <ul>
+      <li>Silver Medal - 2019 Computer Programming Olympiad</li>
+      <li>Several Merit Awards for Academic Excellence</li>
+    </ul>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership Experience</h2>
+    <ul>
+      <li>Prefect (2015-2016)</li>
+      <li>Deputy Head-Boy (2017)</li>
+      <li>Managed School Tuck Shop (2017)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 1 Silver Street, Potchefstroom, North-West</p>
+    <p>📧 LaronaMosupye@gmail.com</p>
+    <p>📞 +27 79 579 0617 | +27 81 682 6657</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lenny Mosupye. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+      const isDark = document.body.classList.contains("dark-mode");
+      localStorage.setItem("darkMode", isDark);
+      document.getElementById('darkModeIcon').textContent = isDark ? '🌙' : '🌓';
+    }
+
+    window.onload = function () {
+      const isDark = localStorage.getItem("darkMode") === "true";
+      if (isDark) {
+        document.body.classList.add("dark-mode");
+        document.getElementById('darkModeIcon').textContent = '🌙';
+      }
+    };
+  </script>
+</body>
+</html>
